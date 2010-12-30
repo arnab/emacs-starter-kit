@@ -8,5 +8,3 @@
 (require 'color-theme)
 (if window-system
   (color-theme-zenburn))
-
-(provide 'arnab/look-n-feel)

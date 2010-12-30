@@ -29,5 +29,3 @@
 (prefer-coding-system 'utf-8)
 
 (require 'line-num)
-
-(provide 'arnab/meta)
