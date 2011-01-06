@@ -6,9 +6,13 @@
 
 ; http://www.emacswiki.org/emacs/ColorTheme#toc9
 (require 'color-theme)
-(if window-system
-  (color-theme-zenburn)
 
-  ; (load (concat dotfiles-dir "arnab/topfunky-theme.el"))
+(load (concat dotfiles-dir "arnab/themes/topfunky-theme.el"))
+(load (concat dotfiles-dir "arnab/themes/color-theme-library.el"))
+
+(if window-system
+  (color-theme-emacs-21)
+  ; other favs
   ; (color-theme-topfunky)
+  ; (color-theme-zenburn)
 )
