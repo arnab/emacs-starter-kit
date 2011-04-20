@@ -9,10 +9,12 @@
 
 (load (concat dotfiles-dir "arnab/themes/topfunky-theme.el"))
 (load (concat dotfiles-dir "arnab/themes/color-theme-library.el"))
+(load (concat dotfiles-dir "arnab/themes/color-theme-solarized.el"))
 
 (if window-system
-  (color-theme-emacs-21)
+  (color-theme-solarized-light)
   ; other favs
+  ; (color-theme-emacs-21)
   ; (color-theme-topfunky)
   ; (color-theme-zenburn)
 )
