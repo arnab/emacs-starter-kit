@@ -7,13 +7,15 @@
 ; http://www.emacswiki.org/emacs/ColorTheme#toc9
 (require 'color-theme)
 
-(load (concat dotfiles-dir "arnab/themes/topfunky-theme.el"))
 (load (concat dotfiles-dir "arnab/themes/color-theme-library.el"))
+(load (concat dotfiles-dir "arnab/themes/topfunky-theme.el"))
 (load (concat dotfiles-dir "arnab/themes/color-theme-solarized.el"))
+(load (concat dotfiles-dir "arnab/themes/color-theme-tangotango.el"))
+(load (concat dotfiles-dir "arnab/themes/color-theme-thor.el"))
 
 (if window-system
+  ; (color-theme-tangotango)
   (color-theme-solarized-light)
-  ; other favs
   ; (color-theme-emacs-21)
   ; (color-theme-topfunky)
   ; (color-theme-zenburn)
