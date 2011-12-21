@@ -14,8 +14,8 @@
 (load (concat dotfiles-dir "arnab/themes/color-theme-thor.el"))
 
 (if window-system
-  ; (color-theme-tangotango)
-  (color-theme-solarized-light)
+  (color-theme-tangotango)
+  ; (color-theme-solarized-light)
   ; (color-theme-emacs-21)
   ; (color-theme-topfunky)
   ; (color-theme-zenburn)
