@@ -1,7 +1,5 @@
-(add-hook 'ruby-mode-hook 'whitespace-mode)
 
-;; automatically add 'end' after class, module, def etc.
-;; automatically pair braces, single and double quotes
-(require 'ruby-electric)
-(add-hook 'ruby-mode-hook 'ruby-electric-mode)
 
+(load "~/.emacs.d/elpa/rvm-1.2/rvm.el")
+; (require 'rvm)
+(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
