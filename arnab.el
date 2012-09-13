@@ -11,5 +11,3 @@
 (require 'textmate)
 (textmate-mode)
 
-;; Download ess from http://ess.r-project.org/index.php?Section=download and put it in the folder below
-(load "~/.emacs.d/arnab/ess-5.14/lisp/ess-site")

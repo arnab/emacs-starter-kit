@@ -1,8 +1,8 @@
 ; Fill up my laptop's screen
 (setq initial-frame-alist '((width . 200) (height . 60)))
 
-; Font: Inconsolata 12pt
-(set-default-font "-apple-Inconsolata-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+; Font: Inconsolata
+(set-default-font "-apple-Inconsolata-medium-normal-normal-*-17.5-*-*-*-m-0-iso10646-1")
 
 ; http://www.emacswiki.org/emacs/ColorTheme#toc9
 (require 'color-theme)
@@ -14,8 +14,8 @@
 (load (concat dotfiles-dir "arnab/themes/color-theme-thor.el"))
 
 (if window-system
-  (color-theme-tangotango)
-  ; (color-theme-solarized-light)
+  ; (color-theme-tangotango)
+  (color-theme-solarized-dark)
   ; (color-theme-emacs-21)
   ; (color-theme-topfunky)
   ; (color-theme-zenburn)
