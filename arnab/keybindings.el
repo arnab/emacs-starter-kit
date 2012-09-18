@@ -1,5 +1,7 @@
-;; something sets C-a to mark-whole-buffer. Set it back.
-(global-set-key (kbd "C-a") 'move-to-left-margin)
-
 ;; settings
 (global-set-key (kbd "s-,") (lambda()(interactive)(find-file "~/code/os/emacs-starter-kit/")))
+
+;; M-x available as C-x C-m too
+(global-set-key (kbd "C-x C-m") 'smex)
+;; And I never use the eshell. So avoid that typo
+(global-set-key (kbd "C-x m") 'smex)
