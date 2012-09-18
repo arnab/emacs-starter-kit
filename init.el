@@ -12,6 +12,7 @@
                                   rvm textmate ruby-end ruby-block
                                   scss-mode
                                   color-theme color-theme-monokai
+                                  ;; color-theme-railscats color-theme-tango
                                   clojure-mode clojure-test-mode
                                   scala-mode
                                   markdown-mode yaml-mode)

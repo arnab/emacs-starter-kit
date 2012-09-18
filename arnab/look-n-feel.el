@@ -15,3 +15,5 @@
 (fontify-frame nil)
 ;; Fontify any future frames
 (push 'fontify-frame after-make-frame-functions)
+
+(blink-cursor-mode 1)
