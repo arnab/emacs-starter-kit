@@ -6,7 +6,7 @@
 
 (defun fontify-frame (frame)
   ;; Cinema Display
-    (set-frame-parameter frame 'font "Inconsolata 20")
+    (set-frame-parameter frame 'font "Inconsolata 19")
   ;; Retina native display
   ;; (set-frame-parameter frame 'font "Inconsolata 16")
   )
