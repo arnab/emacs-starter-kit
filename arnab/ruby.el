@@ -27,3 +27,6 @@
 
 ;;; Do not compile SCSS on save, Rails does that for us
 (defvar scss-compile-at-save nil)
+
+;;; treat rabl files as ruby
+(setq auto-mode-alist (cons '("\\.rabl$" . ruby-mode) auto-mode-alist))
