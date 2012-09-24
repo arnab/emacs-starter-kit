@@ -5,12 +5,14 @@
 (color-theme-molokai)
 
 (defun fontify-frame (frame)
-  ;; Cinema Display
-    (set-frame-parameter frame 'font "Inconsolata 19")
-  ;; Retina native display
-  ;; (set-frame-parameter frame 'font "Inconsolata 16")
-  )
-;; Fontify current frame
+  (interactive)
+  (if window-system
+      (progn
+        (if (> (x-display-pixel-width) 2000)
+            (set-frame-parameter frame 'font "Inconsolata 19") ;; Cinema Display
+         (set-frame-parameter frame 'font "Inconsolata 16")))))
+
+  ;; Fontify current frame
 (fontify-frame nil)
 ;; Fontify any future frames
 (push 'fontify-frame after-make-frame-functions)
