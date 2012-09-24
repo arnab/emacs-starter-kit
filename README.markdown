@@ -8,7 +8,7 @@ See https://github.com/technomancy/emacs-starter-kit
 export ESK_REPO_PATH=`pwd`
 ```
 
-### set up symlinks inside .emacs.d
+### Set up symlinks inside .emacs.d
 + `mkdir -p ~/.emacs.d`
 + `cd ~/.emacs.d`
 + ```
