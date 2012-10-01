@@ -22,3 +22,16 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
+
+;;; Cut the newline when you cut with C-k
+(setq kill-whole-line t)
+
+;;; Duplicate a line, cause that's hard
+(defun duplicate-line()
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (yank)
+)
+(global-set-key (kbd "C-c C-d") 'duplicate-line) ;; ⇧Shift-Cmd-D
