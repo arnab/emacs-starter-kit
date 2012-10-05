@@ -10,7 +10,7 @@
       (progn
         (if (> (x-display-pixel-width) 2000)
             (set-frame-parameter frame 'font "Inconsolata 19") ;; Cinema Display
-         (set-frame-parameter frame 'font "Inconsolata 16")))))
+         (set-frame-parameter frame 'font "Inconsolata 15.5")))))
 
   ;; Fontify current frame
 (fontify-frame nil)
