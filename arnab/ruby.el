@@ -30,3 +30,11 @@
 
 ;;; treat rabl files as ruby
 (setq auto-mode-alist (cons '("\\.rabl$" . ruby-mode) auto-mode-alist))
+
+;;; Add ido-imenu support back into ruby-mode in Emacs24.
+;;; See http://stackoverflow.com/q/12703110/
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (set (make-local-variable imenu-generic-expression)
+                 '(("Methods"  "^\\( *\\(def\\) +.+\\)"          1)
+                   ))))
