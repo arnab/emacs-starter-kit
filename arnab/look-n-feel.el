@@ -5,8 +5,13 @@
 ;; http://www.emacswiki.org/emacs/ColorTheme#toc1
 (load "~/.emacs.d/elpa/color-theme-6.5.5/color-theme.el")
 ;; (load "~/.emacs.d/elpa/color-theme-monokai-0.0.5/color-theme-monokai.el")
-(load "~/.emacs.d/elpa/color-theme-molokai-0.1/color-theme-molokai.el")
-(color-theme-molokai)
+;; (load "~/.emacs.d/elpa/color-theme-molokai-0.1/color-theme-molokai.el")
+;; (color-theme-molokai)
+
+(require 'color-theme)
+;; (color-theme-initialize)
+(load-file "~/color-theme-railscasts.el")
+(color-theme-railscasts)
 
 (defun fontify-frame (frame)
   (interactive)
