@@ -1,17 +1,5 @@
-;; https://github.com/technomancy/emacs-starter-kit/issues/90
-(setq default-frame-alist
-  '((top . 100) (left . 100)))
-
-;; http://www.emacswiki.org/emacs/ColorTheme#toc1
-(load "~/.emacs.d/elpa/color-theme-6.5.5/color-theme.el")
-;; (load "~/.emacs.d/elpa/color-theme-monokai-0.0.5/color-theme-monokai.el")
-;; (load "~/.emacs.d/elpa/color-theme-molokai-0.1/color-theme-molokai.el")
-;; (color-theme-molokai)
-
-(require 'color-theme)
-;; (color-theme-initialize)
-(load-file "~/color-theme-railscasts.el")
-(color-theme-railscasts)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'solarized-dark t)
 
 (defun fontify-frame (frame)
   (interactive)
