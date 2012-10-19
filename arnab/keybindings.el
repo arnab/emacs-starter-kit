@@ -1,5 +1,5 @@
 ;; settings
-(global-set-key (kbd "S-C-s") (lambda()(interactive)(find-file "~/code/os/emacs-starter-kit/")))
+(global-set-key (kbd "M-,") (lambda()(interactive)(find-file "~/code/os/emacs-starter-kit/")))
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
@@ -36,4 +36,4 @@
 )
 (global-set-key (kbd "C-c C-d") 'duplicate-line) ;; ⇧Shift-Cmd-D
 
-(global-set-key (kbd "S-C-t") 'textmate-goto-file)
+(global-set-key (kbd "M-t") 'textmate-goto-file)
