@@ -37,3 +37,6 @@
 (global-set-key (kbd "C-c C-d") 'duplicate-line) ;; ⇧Shift-Cmd-D
 
 (global-set-key (kbd "M-t") 'textmate-goto-file)
+
+(require 'browse-kill-ring)
+(browse-kill-ring-default-keybindings)
