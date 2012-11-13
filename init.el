@@ -9,7 +9,7 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings starter-kit-ruby starter-kit-js
-                                  rvm textmate ruby-end ruby-block rspec-mode
+                                  textmate ruby-end ruby-block rspec-mode
                                   scss-mode
                                   color-theme color-theme-monokai
                                   ;; color-theme-railscats color-theme-tango

@@ -1,7 +1,3 @@
-;;; RVM
-(load "~/.emacs.d/elpa/rvm-1.2/rvm.el")
-(rvm-use-default) ;; use rvm’s default ruby for the current Emacs session
-
 ;;; Rspec
 (add-hook 'ruby-mode-hook 'rspec-mode)
 ;; https://github.com/pezra/rspec-mode#zsh-and-rvm
