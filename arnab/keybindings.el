@@ -38,8 +38,10 @@
 
 (global-set-key (kbd "M-t") 'textmate-goto-file)
 
-;; (require 'browse-kill-ring)
-;; (browse-kill-ring-default-keybindings)
+(eval-after-load "browse-kill-ring"
+  '(progn
+    (require 'browse-kill-ring)
+    (browse-kill-ring-default-keybindings)))
 
 (global-set-key "\C-cy" '(lambda ()
    (interactive)
