@@ -15,8 +15,7 @@
                                   ;; color-theme-railscats color-theme-tango
                                   clojure-mode clojure-test-mode
                                   scala-mode
-                                  markdown-mode yaml-mode
-                                  browse-kill-ring)
+                                  markdown-mode yaml-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
