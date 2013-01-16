@@ -15,7 +15,8 @@
                                   ;; color-theme-railscats color-theme-tango
                                   clojure-mode clojure-test-mode
                                   scala-mode
-                                  markdown-mode yaml-mode)
+                                  markdown-mode yaml-mode
+                                  helm helm-ls-git)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
