@@ -48,4 +48,3 @@
    (popup-menu 'yank-menu)))
 
 (global-set-key (kbd "C-c h") 'helm-mini)
-(global-set-key (kbd "C-x C-f") 'helm-ls-git-ls)
