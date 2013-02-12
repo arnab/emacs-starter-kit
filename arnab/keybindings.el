@@ -40,8 +40,8 @@
   (yank)
 )
 (global-set-key (kbd "C-c C-d") 'duplicate-line) ;; ⇧Shift-Cmd-D
+(global-set-key (kbd "C-x C-g") 'goto-line)
 
-(global-set-key (kbd "M-t") 'textmate-goto-file)
 
 (eval-after-load "browse-kill-ring"
   '(progn
