@@ -15,7 +15,7 @@
                                   scss-mode
                                   color-theme color-theme-monokai
                                   ;; color-theme-railscats color-theme-tango
-                                  clojure-mode clojure-test-mode
+                                  clojure-mode clojure-test-mode nrepl
                                   scala-mode
                                   markdown-mode yaml-mode
                                   helm helm-ls-git)
