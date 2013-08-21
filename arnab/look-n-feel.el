@@ -1,6 +1,3 @@
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;; (load-theme 'solarized-light t)
-
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
 (set-frame-parameter nil 'font "DejaVu Sans Mono-10")
 
