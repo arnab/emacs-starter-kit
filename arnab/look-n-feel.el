@@ -1,8 +1,10 @@
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;; (load-theme 'solarized-light t)
+(load-theme 'zenburn t)
 
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
 (set-frame-parameter nil 'font "DejaVu Sans Mono-10")
+
+(add-to-list 'default-frame-alist '(font . "Source Code Pro-15"))
+(set-frame-parameter nil 'font "Source Code Pro-15")
 
 (defun fontify-frame (frame)
   (interactive)
