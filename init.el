@@ -17,7 +17,9 @@
                                   clojure-mode clojure-test-mode nrepl
                                   scala-mode
                                   markdown-mode yaml-mode
-                                  helm helm-ls-git)
+                                  magit
+                                  helm helm-ls-git
+                                  zenburn-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
