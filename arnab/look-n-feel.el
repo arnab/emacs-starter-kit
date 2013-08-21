@@ -1,3 +1,5 @@
+(load-theme 'zenburn t)
+
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-10"))
 (set-frame-parameter nil 'font "DejaVu Sans Mono-10")
 
