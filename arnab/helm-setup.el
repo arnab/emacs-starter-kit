@@ -1,8 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/elpa/helm-20130719.1026")
 (require 'helm-config)
-(helm-mode 1)
-
-(add-to-list 'load-path "~/.emacs.d/elpa/helm-ls-git-20130511.1253")
 (require 'helm-ls-git)
 
 ;;;###autoload
