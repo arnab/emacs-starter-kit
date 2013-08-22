@@ -10,11 +10,17 @@
   (interactive)
   (if window-system
       (progn
-        (set-face-attribute 'default nil :font
-                    (font-candidate '"Source Code Pro-18"
+        (if (> (x-display-pixel-width) 2000)
+            (set-face-attribute 'default nil :font
+                    (font-candidate '"Source Code Pro-17.5"
                                     "DejaVu Sans Mono-18"
                                     "Droid Sans Mono-18"
-                                    "Consolas-18" )))))
+                                    "Consolas-18"))
+          (set-face-attribute 'default nil :font
+                    (font-candidate '"Source Code Pro-13"
+                                    "DejaVu Sans Mono-13"
+                                    "Droid Sans Mono-13"
+                                    "Consolas-13"))))))
 ;; Fontify current frame
 (fontify-frame nil)
 ;; Fontify any future frames
