@@ -1,4 +1,5 @@
 (org-mode)
+(org-indent-mode)
 (setq org-default-notes-file (concat org-directory "~/Dropbox/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
 (global-set-key "\C-cl" 'org-store-link)
