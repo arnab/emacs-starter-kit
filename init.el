@@ -11,13 +11,11 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
-                                  starter-kit-ruby starter-kit-js
-                                  textmate ruby-end ruby-block rspec-mode
-                                  magit
-                                  helm helm-ls-git
+                                  starter-kit-eshell starter-kit-js
+                                  starter-kit-ruby ruby-end ruby-block rspec-mode
+                                  magit textmate helm helm-ls-git
                                   clojure-mode clojure-test-mode nrepl
-                                  scala-mode
-                                  markdown-mode yaml-mode
+                                  scala-mode markdown-mode yaml-mode
                                   scss-mode
                                   zenburn-theme heroku-theme
                                   molokai-theme monokai-theme solarized-theme)
