@@ -1,3 +1,7 @@
+(require 'rbenv)
+;; (global-rbenv-mode)
+(custom-set-variables '(ruby-test-ruby-executables (list rbenv-ruby-shim)))
+
 ;;; Rspec
 (add-hook 'ruby-mode-hook 'rspec-mode)
 ;; https://github.com/pezra/rspec-mode#zsh-and-rvm
