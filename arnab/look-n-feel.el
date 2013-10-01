@@ -1,4 +1,4 @@
-(load-theme 'molokai t)
+(load-theme 'tango-2 t)
 (blink-cursor-mode 1)
 
 (require 'dash)
