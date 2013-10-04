@@ -30,3 +30,6 @@
             nil
             t))
 (add-hook 'emacs-lisp-mode-hook 'remove-elc-on-save)
+
+(add-hook 'after-init-hook
+          '(lambda () (setq debug-on-error t)))
