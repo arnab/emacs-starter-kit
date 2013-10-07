@@ -16,10 +16,12 @@
                                   rbenv rspec-mode ruby-test-mode
                                   magit textmate helm helm-ls-git
                                   clojure-mode clojure-test-mode nrepl
-                                  scala-mode markdown-mode yaml-mode
+                                  sml-mode scala-mode
+                                  markdown-mode yaml-mode
                                   scss-mode
                                   zenburn-theme heroku-theme
-                                  molokai-theme monokai-theme solarized-theme tango-2-theme)
+                                  molokai-theme monokai-theme solarized-theme
+                                  tango-2-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
