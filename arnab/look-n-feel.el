@@ -12,7 +12,7 @@
       (progn
         (if (> (x-display-pixel-width) 2000)
             (set-face-attribute 'default nil :font
-                    (font-candidate '"Source Code Pro-17.5"
+                    (font-candidate '"Source Code Pro-18"
                                     "DejaVu Sans Mono-18"
                                     "Droid Sans Mono-18"
                                     "Consolas-18"))
