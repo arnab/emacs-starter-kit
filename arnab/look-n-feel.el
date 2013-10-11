@@ -26,5 +26,5 @@
 ;; Fontify any future frames
 (push 'fontify-frame after-make-frame-functions)
 
-(setq longlines-show-hard-newlines t)
+;; (setq longlines-show-hard-newlines t)
 (setq fill-column 100)
