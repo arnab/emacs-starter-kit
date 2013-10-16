@@ -13,7 +13,7 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   starter-kit-ruby ruby-end ruby-block
-                                  ack-and-a-half unfill csv-mode
+                                  ag unfill csv-mode
                                   rbenv rspec-mode ruby-test-mode
                                   magit textmate helm helm-ls-git
                                   clojure-mode clojure-test-mode nrepl
