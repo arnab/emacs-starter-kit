@@ -13,14 +13,14 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   ;; starter-kit-ruby ruby-end ruby-block
-                                  auto-complete
-                                  ag unfill csv-mode buffer-move
+                                  auto-complete smartparens
+                                  ag unfill csv-mode buffer-move dash-at-point
                                   magit textmate helm helm-ls-git
                                   rbenv enh-ruby-mode
                                   clojure-mode clojure-test-mode nrepl ac-nrepl
                                   sml-mode scala-mode
                                   markdown-mode yaml-mode
-                                  scss-mode
+                                  scss-mode rainbow-mode web-mode
                                   zenburn-theme heroku-theme
                                   molokai-theme monokai-theme solarized-theme
                                   tango-2-theme)
