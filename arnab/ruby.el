@@ -28,52 +28,67 @@
 ;;; Do not compile SCSS on save, Rails does that for us
 (defvar scss-compile-at-save nil)
 
-;;; treat rabl files as ruby
-(setq auto-mode-alist (cons '("\\.rabl$" . ruby-mode) auto-mode-alist))
+;;; enhanced ruby mode
+(setq enh-ruby-program "/usr/local/opt/rbenv/versions/2.0.0-p195/bin/ruby")
+(autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$" . enh-ruby-mode))
 
-;;; Add ido-imenu support back into ruby-mode in Emacs24.
-;;; See http://stackoverflow.com/q/12703110/
-(add-hook 'ruby-mode-hook
-          (lambda ()
-            (set (make-local-variable imenu-generic-expression)
-                 '(("Methods"  "^\\( *\\(def\\) +.+\\)"          1)
-                   ))))
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
 
-;;; flymake ruby code:
-;;; http://blog.senny.ch/blog/2012/10/06/emacs-tidbits-for-ruby-developers/
-(eval-after-load 'ruby-mode
-  '(progn
-     ;; Libraries
-     (require 'flymake)
+;;; ruby-mode (obsolete)
 
-     ;; Invoke ruby with '-c' to get syntax checking
-     (defun flymake-ruby-init ()
-       (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                          'flymake-create-temp-inplace))
-              (local-file (file-relative-name
-                           temp-file
-                           (file-name-directory buffer-file-name))))
-         (list "ruby" (list "-c" local-file))))
+;; ;;; treat rabl files as ruby
+;; (setq auto-mode-alist (cons '("\\.rabl$" . ruby-mode) auto-mode-alist))
 
-     (push '(".+\\.rb$" flymake-ruby-init) flymake-allowed-file-name-masks)
-     (push '("Rakefile$" flymake-ruby-init) flymake-allowed-file-name-masks)
+;; ;;; Add ido-imenu support back into ruby-mode in Emacs24.
+;; ;;; See http://stackoverflow.com/q/12703110/
+;; (add-hook 'ruby-mode-hook
+;;           (lambda ()
+;;             (set (make-local-variable imenu-generic-expression)
+;;                  '(("Methods"  "^\\( *\\(def\\) +.+\\)"          1)
+;;                    ))))
 
-     (push '("^\\(.*\\):\\([0-9]+\\): \\(.*\\)$" 1 2 nil 3)
-           flymake-err-line-patterns)
+;; ;;; flymake ruby code:
+;; ;;; http://blog.senny.ch/blog/2012/10/06/emacs-tidbits-for-ruby-developers/
+;; (eval-after-load 'ruby-mode
+;;   '(progn
+;;      ;; Libraries
+;;      (require 'flymake)
 
-     (add-hook 'ruby-mode-hook 'cabbage-flymake-init)
+;;      ;; Invoke ruby with '-c' to get syntax checking
+;;      (defun flymake-ruby-init ()
+;;        (let* ((temp-file (flymake-init-create-temp-buffer-copy
+;;                           'flymake-create-temp-inplace))
+;;               (local-file (file-relative-name
+;;                            temp-file
+;;                            (file-name-directory buffer-file-name))))
+;;          (list "ruby" (list "-c" local-file))))
 
-     (add-hook 'ruby-mode-hook
-               (lambda ()
-                 (when (and buffer-file-name
-                            (file-writable-p
-                             (file-name-directory buffer-file-name))
-                            (file-writable-p buffer-file-name)
-                            (if (fboundp 'tramp-list-remote-buffers)
-                                (not (subsetp
-                                      (list (current-buffer))
-                                      (tramp-list-remote-buffers)))
-                              t))
-                   (local-set-key (kbd "C-c d")
-                                  'flymake-display-err-menu-for-current-line)
-                   (flymake-mode t))))))
+;;      (push '(".+\\.rb$" flymake-ruby-init) flymake-allowed-file-name-masks)
+;;      (push '("Rakefile$" flymake-ruby-init) flymake-allowed-file-name-masks)
+
+;;      (push '("^\\(.*\\):\\([0-9]+\\): \\(.*\\)$" 1 2 nil 3)
+;;            flymake-err-line-patterns)
+
+;;      (add-hook 'ruby-mode-hook 'cabbage-flymake-init)
+
+;;      (add-hook 'ruby-mode-hook
+;;                (lambda ()
+;;                  (when (and buffer-file-name
+;;                             (file-writable-p
+;;                              (file-name-directory buffer-file-name))
+;;                             (file-writable-p buffer-file-name)
+;;                             (if (fboundp 'tramp-list-remote-buffers)
+;;                                 (not (subsetp
+;;                                       (list (current-buffer))
+;;                                       (tramp-list-remote-buffers)))
+;;                               t))
+;;                    (local-set-key (kbd "C-c d")
+;;                                   'flymake-display-err-menu-for-current-line)
+;;                    (flymake-mode t))))))
