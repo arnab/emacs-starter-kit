@@ -13,10 +13,11 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   starter-kit-ruby ruby-end ruby-block
+                                  auto-complete
                                   ag unfill csv-mode buffer-move
                                   rbenv rspec-mode ruby-test-mode
                                   magit textmate helm helm-ls-git
-                                  clojure-mode clojure-test-mode nrepl
+                                  clojure-mode clojure-test-mode nrepl ac-nrepl
                                   sml-mode scala-mode
                                   markdown-mode yaml-mode
                                   scss-mode
