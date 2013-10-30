@@ -5,6 +5,7 @@
 (custom-set-variables '(ruby-test-ruby-executables (list rbenv-ruby-shim)))
 
 ;;; Robe
+;;; Use https://gist.github.com/gnufied/7228158
 (require 'robe)
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 
