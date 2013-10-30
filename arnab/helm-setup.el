@@ -8,8 +8,8 @@
   (require 'helm-files)
   (helm-other-buffer '(
     helm-c-source-buffers-list
-    helm-c-source-recentf
     helm-c-source-ls-git-status
+    helm-c-source-recentf
     helm-c-source-ls-git
     helm-c-source-buffer-not-found)
   "*helm mini*"))
