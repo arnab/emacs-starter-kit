@@ -18,7 +18,7 @@
                                   magit textmate helm helm-ls-git
                                   rbenv enh-ruby-mode
                                   clojure-mode clojure-test-mode nrepl ac-nrepl
-                                  sml-mode scala-mode
+                                  sml-mode scala-mode geiser ac-geiser
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
                                   zenburn-theme heroku-theme
