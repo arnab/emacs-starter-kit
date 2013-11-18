@@ -1,4 +1,5 @@
-(load-theme 'tango-2 t)
+;; (load-theme 'tango-2 t)
+(load-theme 'whiteboard t)
 (blink-cursor-mode 1)
 
 (require 'dash)
@@ -12,15 +13,17 @@
       (progn
         (if (> (x-display-pixel-width) 2000)
             (set-face-attribute 'default nil :font
-                    (font-candidate '"Source Code Pro-18"
-                                    "DejaVu Sans Mono-18"
-                                    "Droid Sans Mono-18"
-                                    "Consolas-18"))
+                                (font-candidate '"Fira Mono-18"
+                                                "Source Code Pro-18"
+                                                "DejaVu Sans Mono-18"
+                                                "Droid Sans Mono-18"
+                                                "Consolas-18"))
           (set-face-attribute 'default nil :font
-                    (font-candidate '"Source Code Pro-14"
-                                    "DejaVu Sans Mono-14"
-                                    "Droid Sans Mono-14"
-                                    "Consolas-14"))))))
+                              (font-candidate '"Fira Mono-14"
+                                              "Source Code Pro-14"
+                                              "DejaVu Sans Mono-14"
+                                              "Droid Sans Mono-14"
+                                              "Consolas-14") ())))))
 ;; Fontify current frame
 (fontify-frame nil)
 ;; Fontify any future frames
@@ -28,3 +31,5 @@
 
 ;; (setq longlines-show-hard-newlines t)
 (setq fill-column 100)
+
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
