@@ -19,11 +19,11 @@
                                                 "Droid Sans Mono-18"
                                                 "Consolas-18"))
           (set-face-attribute 'default nil :font
-                              (font-candidate '"Fira Mono-14"
-                                              "Source Code Pro-14"
-                                              "DejaVu Sans Mono-14"
-                                              "Droid Sans Mono-14"
-                                              "Consolas-14") ())))))
+                              (font-candidate '"Fira Mono-13"
+                                              "Source Code Pro-13"
+                                              "DejaVu Sans Mono-13"
+                                              "Droid Sans Mono-13"
+                                              "Consolas-13"))))))
 ;; Fontify current frame
 (fontify-frame nil)
 ;; Fontify any future frames
