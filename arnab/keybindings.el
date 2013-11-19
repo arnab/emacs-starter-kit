@@ -51,3 +51,7 @@
    (popup-menu 'yank-menu)))
 
 (global-set-key (kbd "C-c h") 'helm-mini)
+
+;;; Bookarmking like SublimeText and M$ VS
+(global-set-key (kbd "C-c <f2>") 'bm-toggle)
+(global-set-key (kbd "<f2>")   'bm-next)
