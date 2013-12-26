@@ -18,7 +18,7 @@
                                   magit textmate helm helm-ls-git
                                   rainbow-delimiters
                                   rbenv enh-ruby-mode
-                                  clojure-mode clojure-test-mode nrepl ac-nrepl
+                                  clojure-mode clojure-test-mode cider ac-nrepl
                                   sml-mode scala-mode geiser ac-geiser
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
