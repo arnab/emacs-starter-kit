@@ -33,3 +33,5 @@
 
 (add-hook 'after-init-hook
           '(lambda () (setq debug-on-error t)))
+
+(setq max-lisp-eval-depth 10000)

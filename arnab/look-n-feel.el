@@ -1,5 +1,5 @@
-;; (load-theme 'tango-2 t)
-(load-theme 'whiteboard t)
+(load-theme 'tango-2 t)
+;; (load-theme 'whiteboard t)
 (blink-cursor-mode 1)
 
 (require 'dash)
