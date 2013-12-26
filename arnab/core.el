@@ -34,4 +34,6 @@
 (add-hook 'after-init-hook
           '(lambda () (setq debug-on-error t)))
 
-(setq max-lisp-eval-depth 10000)
+;; (setq max-lisp-eval-depth 5000)
+;; (setq max-specpdl-size 5)  ; default is 1000, reduce the backtrace level
+(setq debug-on-error t)
