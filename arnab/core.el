@@ -36,4 +36,4 @@
 
 ;; (setq max-lisp-eval-depth 5000)
 ;; (setq max-specpdl-size 5)  ; default is 1000, reduce the backtrace level
-(setq debug-on-error t)
+;; (setq debug-on-error t)

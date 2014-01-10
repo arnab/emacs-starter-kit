@@ -20,6 +20,7 @@
                                   rbenv enh-ruby-mode
                                   clojure-mode clojure-test-mode cider ac-nrepl
                                   sml-mode scala-mode geiser ac-geiser
+                                  io-mode erlang haskell-mode
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
                                   zenburn-theme heroku-theme
