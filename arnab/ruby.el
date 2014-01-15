@@ -9,8 +9,8 @@
 (require 'robe)
 (add-hook 'enh-ruby-mode-hook 'robe-mode)
 
-;;; enhanced ruby mode
-(setq enh-ruby-program "/usr/local/opt/rbenv/versions/2.0.0-p195/bin/ruby")
+;; ;;; enhanced ruby mode
+(setq enh-ruby-program "/usr/local/opt/rbenv/versions/2.1.0/bin/ruby")
 (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
