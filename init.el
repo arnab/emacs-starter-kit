@@ -18,6 +18,7 @@
                                   magit textmate helm helm-ls-git
                                   rainbow-delimiters
                                   rbenv enh-ruby-mode
+                                  js-mode js-comint
                                   clojure-mode clojure-test-mode cider ac-nrepl
                                   sml-mode scala-mode geiser ac-geiser
                                   io-mode erlang haskell-mode
@@ -31,6 +32,7 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
