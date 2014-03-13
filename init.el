@@ -20,7 +20,7 @@
                                   rbenv enh-ruby-mode
                                   js2-mode ac-js2 js-comint
                                   clojure-mode clojure-test-mode cider ac-nrepl
-                                  sml-mode scala-mode geiser ac-geiser
+                                  sml-mode scala-mode2 ensime geiser ac-geiser
                                   io-mode erlang haskell-mode
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
