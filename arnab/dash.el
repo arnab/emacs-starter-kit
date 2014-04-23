@@ -5,3 +5,6 @@
 (add-to-list 'dash-at-point-mode-alist '(js-mode . "javascript"))
 (add-to-list 'dash-at-point-mode-alist '(javascript-mode . "javascript"))
 (add-to-list 'dash-at-point-mode-alist '(emacs-lisp-mode . "el"))
+;;; override clojure modes to use ClojureDocs.org not default clojure docs.
+(add-to-list 'dash-at-point-mode-alist '(clojure-mode . "clj"))
+(add-to-list 'dash-at-point-mode-alist '(clojure-mode . "clj"))
