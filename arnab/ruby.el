@@ -4,6 +4,9 @@
 (global-rbenv-mode)
 (custom-set-variables '(ruby-test-ruby-executables (list rbenv-ruby-shim)))
 
+;;; saner indentation for Ruby: http://j.mp/1irQ8cu
+(setq ruby-deep-indent-paren nil)
+
 ;;; Robe
 ;;; Use https://gist.github.com/gnufied/7228158
 (require 'robe)
