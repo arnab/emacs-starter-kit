@@ -21,8 +21,7 @@
                                   js2-mode js-comint
                                   clojure-mode clojure-test-mode
                                   cider cider-tracing
-                                  sml-mode scala-mode2 ensime geiser
-                                  io-mode erlang haskell-mode
+                                  sml-mode io-mode erlang haskell-mode
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
                                   zenburn-theme heroku-theme
