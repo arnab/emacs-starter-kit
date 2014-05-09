@@ -13,7 +13,8 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   ;; starter-kit-ruby ruby-end ruby-block
-                                  company smartparens yasnippet
+                                  company smartparens
+                                  yasnippet clojure-snippets
                                   ag bm unfill csv-mode buffer-move dash-at-point
                                   magit textmate helm helm-ls-git
                                   rainbow-delimiters
