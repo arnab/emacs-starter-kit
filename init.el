@@ -22,6 +22,7 @@
                                   js2-mode js-comint
                                   clojure-mode clojure-test-mode
                                   cider cider-tracing
+                                  clojure-cheatsheet
                                   sml-mode io-mode erlang haskell-mode
                                   markdown-mode yaml-mode
                                   scss-mode rainbow-mode web-mode
