@@ -39,7 +39,8 @@
   (yank)
   (yank)
 )
-(global-set-key (kbd "C-c C-c C-d") 'duplicate-line) ;; ⇧Shift-Cmd-D
+
+(global-set-key (kbd "s-d") 'duplicate-line) ;; Cmd-D
 
 (eval-after-load "browse-kill-ring"
   '(progn
