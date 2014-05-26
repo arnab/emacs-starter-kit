@@ -13,7 +13,7 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   ;; starter-kit-ruby ruby-end ruby-block
-                                  company smartparens
+                                  company smartparens expand-region
                                   yasnippet clojure-snippets elixir-yasnippets
                                   ag bm unfill csv-mode buffer-move dash-at-point
                                   magit textmate helm helm-ls-git

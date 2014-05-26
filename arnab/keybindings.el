@@ -56,3 +56,7 @@
 ;;; Bookarmking like SublimeText and M$ VS
 (global-set-key (kbd "C-c <f2>") 'bm-toggle)
 (global-set-key (kbd "<f2>")   'bm-next)
+
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+(global-set-key (kbd "C-c C-=") 'er/contract-region)
