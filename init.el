@@ -16,7 +16,7 @@
                                   company smartparens expand-region undo-tree
                                   yasnippet clojure-snippets elixir-yasnippets
                                   ag bm unfill csv-mode buffer-move dash-at-point
-                                  magit textmate helm helm-ls-git
+                                  magit helm helm-ls-git projectile grizzl
                                   rainbow-delimiters
                                   rbenv enh-ruby-mode
                                   js2-mode js-comint
