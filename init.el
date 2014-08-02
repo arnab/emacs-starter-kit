@@ -13,11 +13,12 @@
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
                                   ;; starter-kit-ruby ruby-end ruby-block
-                                  company smartparens expand-region undo-tree
+                                  company smartparens rainbow-delimiters
+                                  expand-region undo-tree dash-at-point
                                   yasnippet clojure-snippets elixir-yasnippets
-                                  ag bm unfill csv-mode buffer-move dash-at-point
-                                  magit helm helm-ls-git projectile grizzl
-                                  rainbow-delimiters
+                                  ag bm unfill csv-mode buffer-move
+                                  magit helm helm-ls-git
+                                  projectile grizzl
                                   rbenv enh-ruby-mode
                                   js2-mode js-comint
                                   clojure-mode clojure-test-mode
