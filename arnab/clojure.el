@@ -1,3 +1,5 @@
 (add-hook 'clojure-mode-hook (lambda ()
                                (clj-refactor-mode 1)
                                (cljr-add-keybindings-with-prefix "C-x C-r")))
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
