@@ -40,7 +40,7 @@
   (yank)
 )
 
-(global-set-key (kbd "s-d") 'duplicate-line) ;; Cmd-D
+(global-set-key (kbd "M-d") 'duplicate-line) ;; Cmd-D (meta is super)
 
 (eval-after-load "browse-kill-ring"
   '(progn
@@ -60,3 +60,7 @@
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 (global-set-key (kbd "C-c C-=") 'er/contract-region)
+
+
+(require 'projectile)
+(global-set-key (kbd "M-t") 'projectile-find-file) ; meta is super.
