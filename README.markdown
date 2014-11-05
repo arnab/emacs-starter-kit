@@ -11,5 +11,5 @@ See https://github.com/technomancy/emacs-starter-kit
 + `mkdir -p ~/.emacs.d`
 + `cd ~/.emacs.d`
 + `` ln -sf $ESK_REPO_PATH/arnab.el `whoami`.el ``
-+ `ln -sf $ESK_REPO_PATH/arnab `whoami` ``
++ `` ln -sf $ESK_REPO_PATH/arnab `whoami` ``
 + Restart emacs. Done!
