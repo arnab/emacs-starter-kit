@@ -12,7 +12,9 @@
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
                                   starter-kit-eshell starter-kit-js
-                                  ;; starter-kit-ruby ruby-end ruby-block
+                                  ;; starter-kit-ruby ruby-end
+                                  ;; ruby-block
+                                  flx flx-ido
                                   company smartparens rainbow-delimiters
                                   expand-region undo-tree dash-at-point
                                   yasnippet clojure-snippets elixir-yasnippets
