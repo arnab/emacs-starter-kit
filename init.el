@@ -24,7 +24,9 @@
                                   rbenv enh-ruby-mode
                                   js2-mode js-comint
                                   clojure-mode clojure-test-mode
-                                  cider cider-tracing clj-refactor
+                                  cider
+                                  ;; cider-tracing
+                                  clj-refactor
                                   clojure-cheatsheet
                                   sml-mode io-mode erlang haskell-mode
                                   markdown-mode yaml-mode
